@@ -29,4 +29,10 @@ if systemctl is-active --quiet firewalld; then
     sudo firewall-cmd --reload
 fi
 
-echo "Deployment complete. Access the app via http://<your-server-public-ip>/"
+# Get the public IP
+PUBLIC_IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+
+# Display success message with access URL
+echo ""
+echo "✅ Deployment complete!"
+echo "🌐 Access your app at: http://$PUBLIC_IP/"
