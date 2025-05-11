@@ -30,7 +30,7 @@ if systemctl is-active --quiet firewalld; then
 fi
 
 # Get the public IP
-PUBLIC_IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+PUBLIC_IP=$(curl ifconfig.me)
 
 # Display success message with access URL
 echo ""
