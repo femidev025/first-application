@@ -20,7 +20,7 @@ ssh ec2-user@<your-ec2-public-ip>
 Download or create the script on your EC2 instance:
 ```sh
 vi setup_hello_world.sh
-```sh
+```
 
 Then paste the contents of the script into the file and save it (Shift zz, OR wq! to save and exit).
 
