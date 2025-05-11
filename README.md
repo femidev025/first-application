@@ -38,7 +38,7 @@ Access the web app:
 
 Open your browser and visit:
 
-http://<your-ec2-public-ip>/
+http://your-ec2-public-ip/
 
 You should see:
 
